@@ -12,6 +12,7 @@ namespace SimpleWCF
     [ServiceContract]
     public interface IService1
     {
+        //adding comment
         [OperationContract]
         [WebGet(UriTemplate = "Data/{value}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         Response GetData(string value);
